@@ -1,5 +1,7 @@
-for i in range(1, 100):
-    print(i)
-    if i ==1:
-        break
-
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+x = int(input())
+y = int(input())
+print(gcd(x, y))
